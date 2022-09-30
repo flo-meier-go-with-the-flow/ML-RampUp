@@ -3,7 +3,7 @@
 ## Goals
 I use this repository to RampUp my Machine Learning and DataScience skills.
 
-##C ontent overview
+## Content overview
 - Numpy
 - Pandas
 - Sklearn
