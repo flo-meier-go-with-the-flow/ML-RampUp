@@ -3,9 +3,12 @@
 ## Goals
 I use this repository to RampUp my Machine Learning and DataScience skills.
 
-##Content overview
-Numpy
-Pandas
-Sklearn
+##C ontent overview
+- Numpy
+- Pandas
+- Sklearn
 
-## useful link
+## useful links
+- asdf
+- asdf
+- asfd
