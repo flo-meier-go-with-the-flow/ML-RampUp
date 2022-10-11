@@ -58,12 +58,23 @@ import numpy as np
 import random
 
 response_list=[]
+response_list2=[]
+random_request_url=False
+if random_request_url:
+    for i in range(100):
+        url=url_list[random.randint(0,len(url_list)-1)]
+        res=get_http_response(url)
+        response_list.append(res)
+        # a=random.uniform(0,1)
+        time.sleep(np.random.poisson(lam=0.1))
+    print(response_list)
+else:
+    for i in range(len(url_list)):
+        res = get_http_response(url_list[i])
+        response_list.append(res)
+    for i in range(len(url_list)):
+        res = get_http_response(url_list[i])
+        response_list2.append(res)
 
-for i in range(100):
-  url=url_list[random.randint(0,len(url_list)-1)]
-  res=get_http_response(url)
-  response_list.append(res)
-  # a=random.uniform(0,1)
-  time.sleep(np.random.poisson(lam=0.1))
-
-print(response_list)
+    print(response_list)
+    print(response_list2)
